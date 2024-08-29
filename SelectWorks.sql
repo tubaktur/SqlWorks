@@ -28,3 +28,16 @@ Bundan kaçmanın yolu ihtiyaç duyulan fieldların tek tek aralarında virgül 
 
  SELECT EmployeeID,FirstName,LastName FROM Employees; --Bu şekilde sorgu tercih edilir.
  SELECT * FROM Employees; --Bu pek tercih edilmez.
+
+
+ --Data filtreleme: Filtreleme yapmak için where şartı kullanılır.
+
+ --Amerikadaki musterilerin listesi
+ SELECT * FROM Customers WHERE Country= 'USA'
+
+ --Amerikadaki musterilerin seattle olanlarının listesi
+ SELECT * FROM Customers WHERE Country='USA' AND City='Seattle'
+
+ -- Where sartında null kayitların aranması
+ SELECT * FROM Customers WHERE Region is null
+
