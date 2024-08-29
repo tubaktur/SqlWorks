@@ -18,3 +18,11 @@ SELECT * from Employees where Notes like '%Italian%'
 --adının ilk harfi a ya da l olanlar
 select * from Employees where FirstName LIKE 'a%' or FirstName like 'l%'
 --select * from Employees where FirstName LIKE 'a%' or FirstName like '[al]%' sadece sql de böyle de kullanılabilir.
+
+-- J DEN R YE KADAR BÜTÜN KAYITLARI GETİR
+SELECT * from Employees where FirstName LIKE '[J-R]%'
+
+--First_name içinde a ya da l olan kayitlar
+SELECT * FROM Employees
+WHERE FirstName LIKE '%[al%'
+Order By FirstName
