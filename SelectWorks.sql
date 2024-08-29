@@ -41,3 +41,74 @@ Bundan kaçmanın yolu ihtiyaç duyulan fieldların tek tek aralarında virgül 
  -- Where sartında null kayitların aranması
  SELECT * FROM Customers WHERE Region is null
 
+ -- Tarih ile ilgili alanların sorgulanması
+
+ --YIL
+ SELECT * FROM Orders where YEAR(OrderDate)=1996
+
+ --AY
+ SELECT * FROM Orders where MONTH(OrderDate)=7
+
+ --GUN
+ SELECT * FROM Orders where DAY(OrderDate)=5
+
+ --Date_part
+ SELECT * FROM Orders WHERE DATEPART(MONTH,OrderDate)=7
+
+ --SAYISAL ALANLARDA SORGULAMA
+ SELECT * FROM Orders WHERE ShipVia = 3
+
+ --Amerika dışındaki tedarikçilerin listesi
+ SELECT * from Suppliers WHERE Country !='USA'
+
+ /*
+ İŞLENECEK KONULAR;
+ 1- LİKE KOMUTU,COUNT,SUM,AVG FONKSİYONLARI,SUB QUERY
+ 2- GRUPLAMA VE HAVİNG
+ 3- JOİN (İNNER,LEFT,RİGHT,FULL)
+ 4- PROCEDURE,WİEV,TRİGGER KONULARI ELE ALINACAK
+ 5- CRUD İŞLEMLERİ CREATE,UPDATE,DELETE
+ 6- kENDİ DATABASE MİZİ OLUŞTURMA
+ 7- NORMALİZATİON
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
